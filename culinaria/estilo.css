@@ -1,1 +1,83 @@
+header {
+    position: relative;
+    text-align: center;
+}
 
+.intro-image img {
+    width: 100%; /* A imagem ocupa toda a largura do cabeçalho */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o título no cabeçalho */
+header h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+/* Estilo para as barras laterais */
+.sidebar-left, .sidebar-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+.sidebar-left img, .sidebar-right img {
+    width: 100%; /* A imagem ocupa toda a largura da barra lateral */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+/* Estilo para as seções */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o conteúdo da seção */
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre texto e imagem */
+}
+
+.section-content.reverse {
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos para texto à direita e imagem à esquerda */
+}
+
+/* Estilo para a caixa de texto */
+.text-box {
+    border: 2px solid #333; /* Borda ao redor do texto */
+    padding: 10px;
+    flex: 1;
+    background-color: aliceblue;
+}
+
+/* Estilo para a caixa de imagem */
+.image-box {
+    border: 2px solid #333; /* Borda ao redor da imagem */
+    padding: 5px;
+}
+
+/* Estilo para as imagens dentro do contêiner */
+.image-box img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da caixa */
+    height: auto; /* Mantém a proporção da imagem */}
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('/imagens/fundao.png'); /* Caminho para a imagem de fundo */
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        background-attachment: fixed; /* Fixa a imagem no fundo durante o rolar da página */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        color: #333; /* Cor padrão do texto */
+        position: relative;
+        min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da tela */
+    }
