@@ -1,72 +1,53 @@
-/* Reset básico para margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo geral da página */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     color: #333;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* Estilo do cabeçalho */
 header {
-    background: #333;
+    background: url('header-background.jpg') no-repeat center center;
+    background-size: cover;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo principal */
-main {
+.curiosity {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
     padding: 20px;
+    max-width: 800px;
 }
 
-.curiosidades {
-    background: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.curiosidades h2 {
-    color: #333;
+.curiosity img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
