@@ -1,1 +1,133 @@
+body {
+    position: relative;
+}
+
+.back-to-index {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(243, 118, 187, 0.952); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+}
+
+.back-to-index:hover {
+background-color: rgb(243, 118, 187); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://w.wallhaven.cc/full/49/wallhaven-49p298.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: rgba(194, 86, 145, 0.753); 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+}
+
+header h1 {
+    color: white;
+    padding: 10px 20px; 
+    display: inline-block; 
+    background-color: rgba(243, 118, 187, 0.7); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+}
+
+nav {
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.section {
+    margin-bottom: 40px;
+    display: flex; 
+    align-items: center;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    color: #470d24; 
+    text-decoration: none;
+    border-bottom: 2px solid #470d24;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.text p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.tourist-spots {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #470d24; 
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
 
