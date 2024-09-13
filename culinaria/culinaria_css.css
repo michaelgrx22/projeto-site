@@ -1,82 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundao.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.voltar {
+    display: inline-table;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.voltar:hover {
+    background-color: rgb(0, 0, 0);
+}
+
 header {
-    position: relative;
+    background-color: rgba(194, 86, 145, 0); 
+    color: white;
     text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+    position: relative; 
 }
 
-.intro-image img {
-    width: 100%; /* A imagem ocupa toda a largura do cabeçalho */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilo para o título no cabeçalho */
 header h1 {
-    margin: 20px 0;
-    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 10px 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: inline-block; 
 }
 
-/* Estilo para as barras laterais */
-.sidebar-left, .sidebar-right {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-}
-
-.sidebar-left img, .sidebar-right img {
-    width: 100%; /* A imagem ocupa toda a largura da barra lateral */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilo para o contêiner principal */
 .container {
-    display: inline-block;
-    vertical-align: top;
-    width: 60%;
-}
-/* Estilo para as seções */
-section {
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para o conteúdo da seção */
 .section-content {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaço entre texto e imagem */
+    margin-bottom: 40px;
 }
 
 .section-content.reverse {
-    flex-direction: row-reverse; /* Inverte a ordem dos elementos para texto à direita e imagem à esquerda */
+    flex-direction: row-reverse;
 }
 
-/* Estilo para a caixa de texto */
 .text-box {
-    border: 2px solid #333; /* Borda ao redor do texto */
-    padding: 10px;
     flex: 1;
-    background-color: aliceblue;
+    padding: 20px;
 }
 
-/* Estilo para a caixa de imagem */
+.text-box h2 {
+    color: #000000;
+    border-bottom: 2px solid #470d24;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.text-box p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
 .image-box {
-    border: 2px solid #333; /* Borda ao redor da imagem */
-    padding: 5px;
+    flex: 1;
+    padding: 20px;
 }
 
-/* Estilo para as imagens dentro do contêiner */
 .image-box img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */}
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-image: url('/imagens/fundao.png'); /* Caminho para a imagem de fundo */
-        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
-        background-attachment: fixed; /* Fixa a imagem no fundo durante o rolar da página */
-        background-repeat: no-repeat; /* Impede que a imagem se repita */
-        color: #333; /* Cor padrão do texto */
-        position: relative;
-        min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da tela */
-    }
+.sidebar-left {
+    display: none; 
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
