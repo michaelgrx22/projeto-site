@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japão</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('fundo-japao.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d32f2f;
+            font-family: 'Times New Roman', serif;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border: none; /* Remove qualquer borda */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+            border: none; /* Remove bordas */
+        }
+
+        .box {
+            width: 30%;
+            height: 200px;
+            border-radius: 8px;
+            margin: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            border: none; /* Remove borda */
+            background-color: transparent; /* Remove cor de fundo */
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+        .box p {
+            margin: 0;
+            padding: 10px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: transparent; /* Remove fundo do texto */
+            border: none; /* Remove borda do texto */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            border: none; /* Remove borda dos links */
+        }
+
+        .decoration img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Japão</h1>
+
+    <div class="container">
+        <a href="pagina1.html">
+            <div class="box">
+                <img src="imagem1.jpg" alt="Imagem Tópico 1">
+                <p>Tópico 1</p>
+            </div>
+        </a>
+        <a href="pagina2.html">
+            <div class="box">
+                <img src="imagem2.jpg" alt="Imagem Tópico 2">
+                <p>Tópico 2</p>
+            </div>
+        </a>
+        <a href="pagina3.html">
+            <div class="box">
+                <img src="imagem3.jpg" alt="Imagem Tópico 3">
+                <p>Tópico 3</p>
+            </div>
+        </a>
+        <a href="pagina4.html">
+            <div class="box">
+                <img src="imagem4.jpg" alt="Imagem Tópico 4">
+                <p>Tópico 4</p>
+            </div>
+        </a>
+        <a href="pagina5.html">
+            <div class="box">
+                <img src="imagem5.jpg" alt="Imagem Tópico 5">
+                <p>Tópico 5</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
