@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -346,3 +347,352 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes Gays</title>
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Reddit Sans Condensed', sans-serif;
+            font-size: 3em;
+            color: #ff9800;
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            max-width: 1200px;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: #ff9800;
+            border-radius: 10px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+            background-color: #1c1c1c;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            min-width: 200px;
+            max-width: 200px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            font-family: 'Reddit Sans Condensed', sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+
+        .card-content p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+
+        
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            font-family: 'Reddit Sans Condensed', sans-serif;
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ff9800;
+        }
+
+        .modal-content p {
+            color: #e0e0e0;
+        }
+
+        .close {
+            color: #ff9800;
+            font-size: 24px;
+            font-weight: bold;
+            float: right;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ff5722;
+        }
+
+        
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .star {
+            font-size: 2em;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .star:hover,
+        .star.active {
+            color: #ff9800;
+        }
+
+        .card-rating {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ANIMES</h1>
+        <p>Os Animes Mais assistidos do Japão.</p>
+    </header>
+
+    <div class="scroll-container">
+        <div class="card" data-modal="modal1">
+            <img src="https://example.com/imagem1.jpg" alt="Imagem do Japão">
+            <div class="card-content">
+                <h2>Attack on Titan (Shingeki no Kyojin) </h2>
+                <p>Em um mundo onde a humanidade vive cercada por muralhas gigantes para se proteger dos titãs devoradores de homens, Eren Yeager se junta aos soldados que combatem essas criaturas após ver sua cidade destruída e sua mãe morta por um titã.</p>
+            </div>
+            <div class="card-rating">
+                <div class="stars" data-card="1">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-modal="modal2">
+            <img src="https://example.com/imagem2.jpg" alt="Anime Japão">
+            <div class="card-content">
+                <h2>Naruto</h2>
+                <p>Naruto Uzumaki, um jovem ninja com um demônio de nove caudas selado dentro dele, sonha em se tornar o Hokage, o líder de sua vila, e ganhar o reconhecimento de todos. Ele enfrenta muitos desafios e faz novos amigos enquanto busca seu objetivo.</p>
+            </div>
+            <div class="card-rating">
+                <div class="stars" data-card="2">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-modal="modal3">
+            <img src="https://example.com/imagem3.jpg" alt="Tecnologia no Japão">
+            <div class="card-content">
+                <h2>Dragon Ball Z</h2>
+                <p>Segue as aventuras de Goku e seus amigos enquanto eles protegem a Terra de ameaças poderosas. A série é conhecida por suas intensas batalhas e transformações, como o Super Saiyajin</p>
+            </div>
+            <div class="card-rating">
+                <div class="stars" data-card="3">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-modal="modal4">
+            <img src="https://example.com/imagem4.jpg" alt="História do Japão">
+            <div class="card-content">
+                <h2>One Piece</h2>
+                <p>Monkey D. Luffy e sua tripulação de piratas buscam o lendário tesouro conhecido como One Piece para se tornarem o Rei dos Piratas. Eles enfrentam inimigos poderosos e fazem amigos pelo caminho.</p>
+            </div>
+            <div class="card-rating">
+                <div class="stars" data-card="4">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-modal="modal5">
+            <img src="https://example.com/imagem5.jpg" alt="Gastronomia Japonesa">
+            <div class="card-content">
+                <h2>Evangelion</h2>
+                <p> Em um futuro distópico, adolescentes pilotam robôs gigantes chamados Evas para defender a Terra de misteriosos inimigos, os Anjos. A série explora temas profundos sobre a psicologia humana e a existência enquanto revela segredos ocultos sobre o mundo e os próprios pilotos.</p>
+            </div>
+            <div class="card-rating">
+                <div class="stars" data-card="5">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Attack on Titan</h2>
+            <p>HOMEM PELADO</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>NARUTO</h2>
+            <p>PODER DA AMIZADE</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>DRAGON BALL Z</h2>
+            <p>KA ME HA ME HA</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>ONE PIECE</h2>
+            <p>PIRATA QUE ESTICA </p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>EVANGELION</h2>
+            <p>ENTRA NO ROBO SHINJI</p>
+        </div>
+    </div>
+
+ 
+    <script>
+        const cards = document.querySelectorAll('.card');
+        const modals = document.querySelectorAll('.modal');
+        const closes = document.querySelectorAll('.close');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                const modalId = this.getAttribute('data-modal');
+                document.getElementById(modalId).style.display = 'flex';
+            });
+        });
+
+        closes.forEach(close => {
+            close.addEventListener('click', function () {
+                this.closest('.modal').style.display = 'none';
+            });
+        });
+
+        window.onclick = function (event) {
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        };
+
+        
+        const stars = document.querySelectorAll('.star');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function () {
+                const card = this.parentNode.getAttribute('data-card');
+                const value = this.getAttribute('data-value');
+
+               
+                document.querySelectorAll(`.stars[data-card="${card}"] .star`).forEach(s => s.classList.remove('active'));
+
+                for (let i = 0; i < value; i++) {
+                    document.querySelectorAll(`.stars[data-card="${card}"] .star`)[i].classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+>>>>>>> a4e69292294036fbc8670b9fa432932b6d15ce21
