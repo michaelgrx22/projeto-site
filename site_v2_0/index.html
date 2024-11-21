@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Mundo dos Jogos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo à Página Inicial</h1>
-        <button onclick="window.location.href='valorant.html'">Ir para Valorant</button>
-        <br>
-        <button onclick="window.location.href='god/god.html'">Ir para God</button>
+
+    <canvas id="pong"></canvas>
+
+    <h1>Bem-vindo ao Mundo dos Jogos!</h1>
+    <p>Descubra informações e curiosidades sobre nossos jogos favoritos!</p>
+    
+    <h2>Nossos Jogos:</h2>
+    <div class="game-container">
+        <div class="game last-of-us" onclick="redirectTo('jogo1.html')"></div>
+        <div class="game valorant" onclick="redirectTo('jogo2.html')"></div>
+        <div class="game god-of-war" onclick="redirectTo('jogo3.html')"></div>
+        <div class="game star-wars" onclick="redirectTo('jogo4.html')"></div>
+        <div class="game stardew-valley" onclick="redirectTo('jogo5.html')"></div>
+        <div class="game other-game" onclick="redirectTo('jogo6.html')"></div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Mundo dos Jogos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
