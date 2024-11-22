@@ -118,15 +118,24 @@ body.gowRagnarok {
 
 #gif-quadrado {
     position: fixed; 
-    top: 55%; 
-    left: 50%;
-    width: 500px;
-    height: 300px;
-    background-image: url('god.gif'); 
+    top: 78%; 
+    left: 50%; 
+    width: 600px;
+    height: 350px;
+    background-image: url('god.gif');
     background-size: cover;
     background-position: center;
     transform: translate(-50%, -50%); 
+    display: block;
+    transition: opacity 0.5s ease; 
+    border: 2px solid #750000;
     border-radius: 5%;
+    box-shadow: 0 0 15px #000000;
+}
+
+#gif-quadrado.hidden {
+    opacity: 0; 
+    pointer-events: none; 
 }
 
 

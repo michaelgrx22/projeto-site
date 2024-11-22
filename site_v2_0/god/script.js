@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameDescription = document.getElementById("descricao-jogo");
     const customCursor = document.getElementById("cursor-personalizado");
     const containerPersonagens = document.getElementById("container-personagens");
+    const gifQuadrado = document.getElementById("gif-quadrado"); 
 
     const personagensGoW2018 = `
         <div class="personagem">
@@ -73,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
         containerPersonagens.innerHTML = jogo.personagens;
         containerPersonagens.style.display = "flex";
+    
+        gifQuadrado.classList.add("hidden");
     }
     
 
@@ -82,6 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.body.classList.add('inicial');
+
+    document.addEventListener("DOMContentLoaded", () => {
+        gifQuadrado.classList.remove("hidden");
+    });
 
     document.getElementById("voltarBtn").addEventListener("click", () => {
         window.location.href = "index.html";
