@@ -118,9 +118,9 @@ body.gowRagnarok {
 
 #gif-quadrado {
     position: fixed; 
-    top: 78%; 
+    top: 75%; 
     left: 50%; 
-    width: 600px;
+    width: 580px;
     height: 350px;
     background-image: url('god.gif');
     background-size: cover;
