@@ -129,7 +129,7 @@
         document.body.classList.add(theme + '-mode');
 
 
-        const toggleButton = document.getElementById('toggle-theme');  // Supondo que você tenha um botão com esse id
+        const toggleButton = document.getElementById('toggle-theme');
         toggleButton.addEventListener('click', () => {
         const currentMode = document.body.classList.contains('light-mode') ? 'light' : 'dark';
         const newMode = currentMode === 'dark' ? 'light' : 'dark';
