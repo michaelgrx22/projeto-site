@@ -65,23 +65,23 @@ body.inicial {
 
 
 .container {
-    padding: 2px;
+    padding: 5px;
     color: white;
     text-shadow: 1px 1px 3px black;
 }
 
 h1 {
     font-size: 3em;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .selecao-jogos {
-    margin: 2px 0;
+    margin: 10px 0;
 }
 
 .botao-jogo {
-    padding: 10px 20px;
-    margin: 2px;
+    padding: 10px 85Apx;
+    margin: 5px;
     font-size: 1.2em;
     color: white;
     background-color: #000000;
