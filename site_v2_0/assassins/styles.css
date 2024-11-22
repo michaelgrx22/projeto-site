@@ -1,0 +1,107 @@
+/* Resetando a margem e o padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral da página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d3c5c5;
+    transition: background-image 0.5s ease-in-out;
+    color: #0a0a0a;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('imagens/fundow.gif'); /* Caminho para o GIF */
+    background-size: cover;  /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-repeat: no-repeat; /* Evita a repetição do GIF */
+    transition: background-image 0.5s ease-in-out;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Estilos do botão de voltar */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .back-button button {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button button:hover {
+    background-color: #444;
+  }
+  
+  /* Estilos do Menu */
+  .menu {
+    padding: 20px;
+  }
+  
+  .game-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .game-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .game-card h3 {
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  /* Efeitos no card ao passar o mouse */
+  .game-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Detalhes do Jogo */
+  .game-details {
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .game-details h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .game-details img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .game-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  

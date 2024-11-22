@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assassin's Creed - Jogos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <button onclick="window.location.href='../index.html'" style="position: absolute; top: 10px; left: 10px; padding: 12px 24px; background-color: #111; color: #e6e6e6; border: 2px solid #e60012; border-radius: 8px; cursor: pointer; font-size: 1.2em; font-weight: bold; text-transform: uppercase; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); transition: all 0.3s ease;">
+    Voltar para a Página Inicial
+</button>
+
+
+  <!-- Menu de Seleção de Jogo -->
+  <div class="menu">
+    <h1>Escolha um Jogo</h1>
+    <div class="game-menu">
+      <div class="game-card" id="ac2">
+        <img src="imagens/ac2.png" alt="Assassin's Creed II">
+        <h3>Assassin's Creed II</h3>
+      </div>
+      <div class="game-card" id="ac3">
+        <img src="imagens/ac3.png" alt="Assassin's Creed III">
+        <h3>Assassin's Creed III</h3>
+      </div>
+      <div class="game-card" id="blackflag">
+        <img src="imagens/blackf.png" alt="Assassin's Creed IV: Black Flag">
+        <h3>Black Flag</h3>
+      </div>
+      <div class="game-card" id="unity">
+        <img src="imagens/unity.png" alt="Assassin's Creed: Unity">
+        <h3>Unity</h3>
+      </div>
+      <div class="game-card" id="origins">
+        <img src="imagens/origins.png" alt="Assassin's Creed: Origins">
+        <h3>Origins</h3>
+      </div>
+      <div class="game-card" id="odyssey">
+        <img src="imagens/odyssey.png" alt="Assassin's Creed: Odyssey">
+        <h3>Odyssey</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detalhes do Jogo Selecionado -->
+  <div id="game-details" class="game-details">
+    <div id="game-info">
+      <!-- As informações dos jogos serão inseridas aqui pelo JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
