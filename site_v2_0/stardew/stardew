@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stardew Valley - Fundo e Galeria</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        background-color: #f4f4f4;
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("https://w.wallhaven.cc/full/39/wallhaven-398pp6.jpg") no-repeat center center/cover;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.6;
+      }
+
+      .background {
+  background: url("https://w.wallhaven.cc/full/39/wallhaven-398pp6.jpg") no-repeat center center/cover;
+}
+
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: transparent;
+        color: #fff;
+      }
+
+      header img {
+        max-width: 300px;
+        height: auto;
+      }
+
+      .taskbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: #fff;
+      }
+
+      .taskbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      .taskbar a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .gallery-container {
+        margin: 30px auto;
+        width: 80%;
+        max-width: 800px;
+        position: relative;
+      }
+
+      .gallery-image {
+        width: 100%;
+        display: none;
+      }
+
+      .gallery-image.active {
+        display: block;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .arrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .arrow-left {
+        left: 10px;
+      }
+
+      .arrow-right {
+        right: 10px;
+      }
+
+      .character-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 50px auto;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .character {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .character img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .character:hover {
+        transform: scale(1.1);
+      }
+
+      .info-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      .info-box h3 {
+        margin-top: 0;
+      }
+
+      .info-box button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .info-box button:hover {
+        background-color: #d32f2f;
+      }
+      .about-game {
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-game h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-game p {
+  font-size: 16px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="background-fade"></div>
+
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/pt/f/fd/Logo_of_Stardew_Valley.png"
+        alt="Stardew Valley Logo"
+      />
+    </header>
+
+    <div class="taskbar">
+      <a href="#">Página Inicial</a>
+      <a href="#">Galeria</a>
+      <a href="#">Sobre o Jogo</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="gallery-container">
+      <img
+        src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11.png"
+        class="gallery-image active"
+        alt="Imagem 1"
+      />
+      <img
+        src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4.png"
+        class="gallery-image"
+        alt="Imagem 2"
+      />
+      <button class="arrow arrow-left">&#10094;</button>
+      <button class="arrow arrow-right">&#10095;</button>
+    </div>
+    <div class="character-gallery">
+      <div class="character" data-name="Alex">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png" alt="Alex - Casavel" />
+      </div>
+      <div class="character" data-name="Elliott">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png" alt="Elliott" />
+      </div>
+      <div class="character" data-name="Harvey">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png" alt="Harvey" />
+      </div>
+      <div class="character" data-name="Sam">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png" alt="Sam" />
+      </div>
+      <div class="character" data-name="Sebastian">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png" alt="Sebastian" />
+      </div>
+      <div class="character" data-name="Shane">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png" alt="Shane" />
+      </div>
+      <div class="character" data-name="Abigail">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png" alt="Abigail" />
+      </div>
+      <div class="character" data-name="Emily">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png" alt="Emily" />
+      </div>
+      <div class="character" data-name="Haley">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png" alt="Haley" />
+      </div>
+      <div class="character" data-name="Leah">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png" alt="Leah" />
+      </div>
+      <div class="character" data-name="Maru">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png" alt="Maru" />
+      </div>
+      <div class="character" data-name="Penny">
+        <img src="https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png" alt="Penny" />
+      </div>
+    </div>
+
+    <div class="info-box" id="info-box">
+      <h3 id="character-name"></h3>
+      <p>Personagens Casaveis</p>
+      <button onclick="closeInfoBox()">Fechar</button>
+    </div>
+    <div id="sobre" class="about-game">
+      <h2>Sobre Stardew Valley</h2>
+      <p>
+        Stardew Valley é um simulador de fazenda que combina exploração, agricultura
+        e relações sociais em um ambiente relaxante e encantador. Crie sua fazenda,
+        conheça os habitantes e descubra aventuras nas cavernas próximas!
+      </p>
+    </div>
+
+    <script>
+      const characters = document.querySelectorAll(".character");
+      const infoBox = document.getElementById("info-box");
+      const characterName = document.getElementById("character-name");
+
+      characters.forEach((character) => {
+        character.addEventListener("click", () => {
+          const name = character.getAttribute("data-name");
+          characterName.textContent = name;
+          infoBox.style.display = "block";
+        });
+      });
+
+      function closeInfoBox() {
+        infoBox.style.display = "none";
+      }
+
+      const images = document.querySelectorAll(".gallery-image");
+      const arrowLeft = document.querySelector(".arrow-left");
+      const arrowRight = document.querySelector(".arrow-right");
+      let currentIndex = 0;
+
+      function showImage(index) {
+        images.forEach((img, i) => {
+          img.classList.toggle("active", i === index);
+        });
+      }
+
+      arrowLeft.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+
+      arrowRight.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+
+      showImage(currentIndex);
+    </script>
+  </body>
+</html>
