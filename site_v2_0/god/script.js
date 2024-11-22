@@ -94,4 +94,23 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "index.html";
     });
     
+    const audio = document.getElementById('bg-music');
+
+    const savedTime = localStorage.getItem('audioTime');
+    
+    if (savedTime) {
+        audio.currentTime = savedTime;
+        audio.play();
+    }
+    
+    audio.addEventListener('timeupdate', function() {
+        localStorage.setItem('audioTime', audio.currentTime);
+    });
+    
+    audio.addEventListener('ended', function() {
+        audio.currentTime = 0;
+        audio.play();
+    });
+    
+
 });
