@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us</title>
+    <link rel="stylesheet" href="tlou.css">
+</head>
+<body>
+    <header>
+        <img src="header.jpg" alt="The Last of Us Logo" id="header-logo">
+    </header>
+
+    <main>
+        <section id="world">
+            <h2>O Mundo e a Origem do Fungo</h2>
+            <p><strong>The Last of Us</strong> é um jogo de ação e aventura ambientado em um mundo pós-apocalíptico. A humanidade foi devastada por uma infecção causada por uma mutação do fungo <strong>Cordyceps</strong>, que afeta o cérebro dos seres humanos. No início do século XXI, uma versão do Cordyceps, normalmente presente em insetos, sofre uma mutação, passando a afetar os humanos. Esse fungo transforma suas vítimas em criaturas violentas e descontroladas, conhecidas como <strong>infectados</strong>.</p>
+
+            <p>A infecção se espalha rapidamente, destruindo a sociedade e levando a um mundo cheio de caos, cidades abandonadas e um cenário de destruição. O Cordyceps possui várias formas de afetar seus hospedeiros, criando diferentes tipos de infectados, como <strong>runners</strong> (corredores), <strong>stalkers</strong> (espreitadores), <strong>clickers</strong> (cliqueiros) e <strong>bloaters</strong> (explosivos). Esses seres são imunes ao sofrimento humano, mas seus sentidos são extremamente aguçados, tornando-os altamente perigosos para qualquer sobrevivente.</p>
+
+            <p>Após a queda da civilização, pequenos grupos de sobreviventes lutam para viver em um mundo hostil, enfrentando tanto os infectados quanto outros humanos, que muitas vezes se tornam tão ameaçadores quanto os monstros. A história do jogo segue a jornada de <strong>Joel</strong>, um sobrevivente endurecido pela dor, e <strong>Ellie</strong>, uma jovem que possui a chave para a possível salvação da humanidade: sua imunidade ao Cordyceps.</p>
+
+            <p>Ao longo da jornada, Joel e Ellie enfrentam inúmeros desafios, incluindo a busca por uma cura para a infecção. Eles se encontram com outros sobreviventes, como <strong>Tess</strong>, <strong>Bill</strong>, <strong>Marlene</strong> e <strong>Tommy</strong>, que desempenham papéis essenciais em sua missão. O jogo explora temas de sacrifício, amor, perda e redenção, enquanto os protagonistas tentam encontrar um propósito em um mundo devastado.</p>
+
+            <p>No coração de <strong>The Last of Us</strong> está a luta pela sobrevivência da humanidade, diante da ameaça do Cordyceps. Os sobreviventes tentam entender o que resta de um mundo destruído, enquanto se adaptam a uma nova realidade cheia de perigos e incertezas.</p>
+        </section>
+
+        <h2>Tipos de Infectados</h2>
+        <section id="infectados">
+            <div class="infectado" data-type="runner">
+                <img src="runner.jpg" alt="Runner">
+                <button onclick="mostrarDescricao('runner')">Ver Descrição</button>
+            </div>
+            <div class="infectado" data-type="stalker">
+                <img src="stalker.jpg" alt="Stalker">
+                <button onclick="mostrarDescricao('stalker')">Ver Descrição</button>
+            </div>
+            <div class="infectado" data-type="clicker">
+                <img src="clicker.jpg" alt="Clicker">
+                <button onclick="mostrarDescricao('clicker')">Ver Descrição</button>
+            </div>
+            <div class="infectado" data-type="bloater">
+                <img src="bloater.jpg" alt="Bloater">
+                <button onclick="mostrarDescricao('bloater')">Ver Descrição</button>
+            </div>
+        </section>
+
+        <h2>Personagens</h2>
+        <section id="personagens">
+            <div class="personagem" data-name="ellie">
+                <img src="ellie.jpg" alt="Ellie">
+                <button onclick="mostrarHistoria('ellie')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="joel">
+                <img src="joel.jpg" alt="Joel">
+                <button onclick="mostrarHistoria('joel')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="tess">
+                <img src="tess.jpg" alt="Tess">
+                <button onclick="mostrarHistoria('tess')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="bill">
+                <img src="bill.jpg" alt="Bill">
+                <button onclick="mostrarHistoria('bill')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="marlene">
+                <img src="marlene.jpg" alt="Marlene">
+                <button onclick="mostrarHistoria('marlene')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="sam">
+                <img src="sam.jpg" alt="Sam">
+                <button onclick="mostrarHistoria('sam')">Ver História</button>
+            </div>
+            <div class="personagem" data-name="tommy">
+                <img src="tommy.jpg" alt="Tommy">
+                <button onclick="mostrarHistoria('tommy')">Ver História</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carrossel-section">
+        <h2>Galeria de Imagens</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="image1.jpg" alt="Imagem 1" class="carousel-item">
+                <img src="image2.jpg" alt="Imagem 2" class="carousel-item">
+                <img src="image3.jpg" alt="Imagem 3" class="carousel-item">
+                <img src="image4.jpg" alt="Imagem 4" class="carousel-item">
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <p id="historia-texto"></p>
+        </div>
+    </div>
+    
+<a href="index.html">
+    <button class="voltar-btn">Voltar para a página inicial</button>
+</a>
+
+
+    <script src="tlou.js"></script>
+    <audio id="bg-music" autoplay loop>
+        <source src="theme.mp3" type="audio/mp3">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+</body>
+</html>
